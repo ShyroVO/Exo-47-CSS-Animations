@@ -24,14 +24,14 @@
     75% {
         width: 200px;
         height: 200px;
-        left:5px
+        left:5px;
     }
     100% {
         width:25px;
         height : 25px;
         background : purple;
         top:50px;
-        left:65px
+        left:65px;
     }
 }
 
@@ -44,4 +44,32 @@
     position: absolute;
     left: 500px;
     top: 25px;
+
+    animation-name : bar-animation;
+    animation-duration : 8s;
+    animation-fill-mode : forwards;
+}
+
+@keyframes bar-animation {
+    5% {
+        width: 265px;
+        height:265px;
+    }
+    25% {
+        background : green;
+        width: 150px;
+        height: 150px;
+    }
+    75% {
+        width: 200px;
+        height: 200px;
+        left:505px;
+    }
+    100% {
+        width:25px;
+        height : 25px;
+        background : coral;
+        top:50px;
+        left:565px;
+    }
 }

@@ -37,17 +37,28 @@
 
 #voiture {
     top: 150px;
+    left: 7px;
     position: absolute;
     animation-name: direction-voiture;
     animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 
 @keyframes direction-voiture {
-
+    50% {
+        left: 90%;
+    }
 }
 
 @keyframes rotation-roue {
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
 
 }
 
@@ -103,10 +114,35 @@
     position: absolute;
     animation-name: nuage;
     animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 
 
 
 @keyframes nuage {
+    0% {
+        left: 1%;
+        top: 1%;
+    }
+
+    25% {
+        left: 50%;
+        top: 4%;
+    }
+
+    50% {
+        left: 100%;
+        top: 0;
+    }
+
+    75% {
+        left: 50%;
+        top: 4%;
+    }
+
+    100% {
+        left: 1%;
+        top: 1%;
+    }
 
 }
