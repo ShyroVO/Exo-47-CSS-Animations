@@ -39,8 +39,14 @@
 #helice {
     animation-name: rotHelice;
     animation-duration: 5s;
+    transform-origin: 50% 29%;
+    animation-iteration-count: infinite;
 }
 
 @keyframes rotHelice {
+    100% {
+        transform: rotate(360deg);
+    }
+
 
 }
